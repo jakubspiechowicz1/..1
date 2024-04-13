@@ -1,26 +1,3 @@
-"use client";
-import React, { useState, useEffect } from 'react';
-import { Button } from '../ui/button';
-
-const StopAnimation = () => {
-  const [isAnimationStopped, setIsAnimationStopped] = useState(false);
-
-  useEffect(() => {
-    if (isAnimationStopped) {
-      document.body.classList.add('animation-paused');
-    } else {
-      document.body.classList.remove('animation-paused');
-    }
-  }, [isAnimationStopped]);
-
-  return (
-    <Button 
-      onClick={() => setIsAnimationStopped(!isAnimationStopped)}
-      className={`h-full w-full flex z-10 absolute opacity-0 ${isAnimationStopped ? '' : ''}`}
-    >
-      {isAnimationStopped ? '' : ''}
-    </Button>
-  );
-};
-
-export default StopAnimation;
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ff1d121bba03d425a3c9e7df88c64e8d3f8131a46dabcd1dd4f19b566df00c6
+size 723

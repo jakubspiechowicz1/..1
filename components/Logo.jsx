@@ -1,27 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
-
-//const Logo = () => {
-//  return (
-//    <Link href='/'>
-//      <Image src='/logo1.svg' width={400} height={100} priority alt='' />
-//    </Link>
-//  );
-//};
-//
-//export default Logo;
-
-const Logo = ({ containerStyles, imgSrc }) => {
-  return (
-    <Link href='/'>
-    <div className={`${containerStyles}`}>
-      <Image src={imgSrc} fill priority alt='' />
-    </div>
-    </Link>
-  );
-};
-
-export default Logo;
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:522d3da30f2cb2752cf251af6d0fa49d00c229600f682751e27691d2ce14c812
+size 505
